@@ -6,61 +6,114 @@
     <title>My resume</title>
   </head>
 
-  <link rel="stylesheet" href="./css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
   <body>
     <!--main conteiner-->
     <div class="wrapper">
       <aside class="asidebar">
           <img class="my-photo" src="./img/mar.jpg" alt="My photo">
 
-          <!--contacts conteiner-->
+
+          <div class="short-info">
+            <!--contacts conteiner-->
           <div class="contacts-container">
+            <h1 class="my-name-mobile">Marina Domashenko</h1>
+            <h2 class="profession-mobile">Front-End Developer</h2>
               <h3 class="contacts-title">Contacts</h3>
+              <ul class="list ">
+                <li> 
+                  <span class="contacts-link-type"><a href="tel:+38 093 536 70 00" class="contacts-link">
+                  <svg class="tel-icon" width="10" height="15">
+                    <use href="./img/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 093 536 70 00</a
+                ></span>
+                </li>
 
-              <div> 
-                  <span class="contacts-link-type">C:</span>
-                  <a class="contacts-link" href="+38 095 113 85 98">+38 093 536 70 00</a>
-                </div>
-
-              <div>
-                <span class="contacts-link-type">E:</span> 
-                <a class="contacts-link" href="chornyiav@gmail.com">creator.marina@gmail.com</a>
-                </div>
+                <li>
+                <span class="contacts-link-type"><svg class="tel-icon" width="10" height="15">
+                    <use href="./img/symbol-defs.svg#icon-mail"></use>
+                  </svg></span> 
+                <a class="contacts-link" href="mailto:creator.marina@gmail.com">creator.marina@gmail.com</a>
+                </li>
+              </ul>
+                <p class="contacts-location">Kyiv, Ukraine</p>
+                <ul class="list contacts-info">
+                  <li class="social-item">
+                    <a href="tel:+38 093 536 70 00" class="contacts-link">
+                      <svg class="tel-icon" width="20" height="20">
+                        <use href="./img/symbol-defs.svg#icon-telegram">
+                        </use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="https://github.com/mdcreator" class="contacts-link">
+                      <svg class="tel-icon" width="20" height="20">
+                        <use href="./img/symbol-defs.svg#icon-github">
+                        </use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="https://www.facebook.com/profile.php?id=100001367307274" class="contacts-link">
+                      <svg class="tel-icon" width="20" height="20">
+                        <use href="./img/symbol-defs.svg#icon-facebook">
+                        </use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a href="https://www.linkedin.com/in/marina-domashenko-b5811937/" class="contacts-link">
+                      <svg class="tel-icon" width="20" height="20">
+                        <use href="./img/symbol-defs.svg#icon-linkedin">
+                        </use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
           </div>
-
+          <div class="skills-info">
            <!-- Tech skills conteiner -->
           <div class="tech-skills-conteiner">
-              <h3 class="tech-skills-title">Tech Skills</h3>
-                  <ul>
-                      <li class="tech-skills-item">
-                        <span class="tech-skills-text">HTML</span>
-                      </li>
-                      <li class="tech-skills-item">
-                        <span class="tech-skills-text">CSS3</span>
-                      </li>
-                      <li class="tech-skills-item">
-                        <span class="tech-skills-text">GIT</span>
-                      </li>
-                      <li class="tech-skills-item">
-                        <span class="tech-skills-text">WebPack</span>
-                      </li>
-                      <li class="tech-skills-item">
-                        <span class="tech-skills-text">JavaScript</span>
-                      </li>
-                      <li class="tech-skills-item">
-                        <span class="tech-skills-text">React.js</span>
-                      </li>
-                      <li class="tech-skills-item">
-                        <span class="tech-skills-text">Node.js</span>
-                      </li>
-                  </ul>
-                    </div>
+            <h3 class="skills-title">Tech Skills</h3>
+              <ul>
+                <li class="my-element">
+                  <span class="my-element-text">HTML5</span>
+                </li>
+                <li class="my-element">
+                  <span class="my-element-text">CSS3/SASS</span>
+                </li>
+                <li class="my-element">
+                  <span class="my-element-text">GIT</span>
+                </li>
+                <li class="my-element">
+                  <span class="my-element-text">WebPack/Parcel</span>
+                </li>
+                <li class="my-element">
+                  <span class="my-element-text">JavaScript(ES6)</span>
+                </li>
+                <li class="my-element">
+                  <span class="my-element-text">React.js</span>
+                </li>
+                <li class="my-element">
+                  <span class="my-element-text">Node.js</span>
+                </li>
+                <li class="my-element">
+                  <span class="my-element-text">Figma</span>
+                </li>
+                <li class="my-element">
+                  <span class="my-element-text">Adobe Illustrator</span>
+                </li>
+              </ul>
+          </div>
 
            <!-- soft skills -->
            <div class="soft-skills-conteiner">
-           <h3 class="soft-skill-title">Soft Skills</h3>
-                    <ul>
+           <h3 class="skills-title">Soft Skills</h3>
+              <ul>
                         <li class="my-element">
                           <span class="my-element-text">Scrum</span>
                         </li>
@@ -73,21 +126,21 @@
                         <li class="my-element">
                           <span class="my-element-text">Teamwork</span>
                         </li>
-                    </ul>
-                    </div>      
+              </ul>
+           </div> 
+          </div>
+          </div>
+
+               
       </aside>
       <!--about me conteiner-->
       <div class="about-me-conteiner">
         <!--about me main info-->
         <div class="info-conteiner">
-          <h2 class="profession">Junior Full-Stack Developer</h2>
-          <h1 class="my-mane">Marina Domashenko</h1>
-
+            <h2 class="profession-desktop">Front-End Developer</h2>
+            <h1 class="my-name-desktop">Marina Domashenko</h1>
           <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consectetur accusamus impedit molestias, eaque porro fuga, vero
-            dicta temporibus necessitatibus obcaecati natus ab pariatur. Debitis
-            rem illum facere! Ullam, quos accusamus.
+            I'm Front-end Dev. At the same time, I continue my education in this field. My goal is to improve my skills and get experience in working on real projects. Learning and using such technologies as HTML5, CSS/SASS, JS(ES6+), React, Webpack/Parcel, Git and a huge number of npm packages/libraries from JS/React ecosystem.
           </p>
         </div>
 
@@ -95,28 +148,140 @@
         <div class="project-conteiner">
           <h3 class="about-me-title">Projects</h3>
 
-          <ol>
+          <p class="projects-title">Personal projects</p>
+          <ul class="list projects-list">
             <li class="project-item">
-              <a class="project-link" href="https://lovecamp.allinsol.com/"> https://lovecamp.allinsol.com/</a>
-
-              <span class="dots">.................................</span>
-              <span><b>[</b><span class="tech-mane"> HTML5, CSS3 </span><b>]</b></span>
+              <a class="project-link" href="https://mdcreator.github.io/goit-markup-hw-08/">
+                <svg class="link-icon" width="10" height="10">
+                  <use href="./img/symbol-defs.svg#icon-link">
+                  </use>
+                </svg>
+                 WEB Studio
+              </a>
+              <span class="dots"></span>
+              <span class="tech-mane"> [ HTML5, CSS3 ] </span>
             </li>
 
             <li class="project-item">
-              <a class="project-link" href="https://cryptohub.goit.ua/"> https://cryptohub.goit.ua/</a>
+              <a class="project-link" href="https://mdcreator.github.io/goit-js-hw-11-timer/">
+                <svg class="link-icon" width="10" height="10">
+                  <use href="./img/symbol-defs.svg#icon-link">
+                  </use>
+                </svg>
+                 Countdown timer 
+              </a>
 
-              <span class="dots">...........................................</span>
-              <span><b>[</b><span class="tech-mane"> JavaScript </span><b>]</b></span>
+              <span class="dots"></span>
+              <span class="tech-mane"> [ JavaScript ] </span>
             </li>
 
             <li class="project-item">
-              <a class="project-link" href="https://kidslike.goit.co.ua/"> https://kidslike.goit.co.ua/</a>
+              <a class="project-link" href="https://mdcreator.github.io/goit-js-hw-12-countries/">
+                <svg class="link-icon" width="10" height="10">
+                  <use href="./img/symbol-defs.svg#icon-link">
+                  </use>
+                </svg>
+                 Search country data 
+              </a>
 
-              <span class="dots">............................................</span>
-              <span><b>[</b><span class="tech-mane">React.js, Node.js</span><b>]</b></span>
+              <span class="dots"></span>
+              <span class="tech-mane"> [ JavaScript ] </span>
             </li>
-          </ol>
+
+            <li class="project-item">
+              <a class="project-link" href="https://mdcreator.github.io/goit-js-hw-13-image-finder/">
+                <svg class="link-icon" width="10" height="10">
+                  <use href="./img/symbol-defs.svg#icon-link">
+                  </use>
+                </svg>
+                 Image finder 
+              </a>
+
+              <span class="dots"></span>
+              <span class="tech-mane"> [ JavaScript ] </span>
+            </li>
+
+            <li class="project-item">
+              <a class="project-link" href="/">
+                <svg class="link-icon" width="10" height="10">
+                <use href="./img/symbol-defs.svg#icon-link">
+                </use>
+              </svg>
+               To-Do-List 
+            </a>
+
+              <span class="dots"></span>
+              <span class="tech-mane"> [ React.js ] </span>
+            </li>
+
+            <li class="project-item">
+              <a class="project-link" href="https://mdcreator.github.io/goit-react-hw-07-phonebook/">
+                <svg class="link-icon" width="10" height="10">
+                <use href="./img/symbol-defs.svg#icon-link">
+                </use>
+              </svg>
+               Phonebook 
+            </a>
+
+              <span class="dots"></span>
+              <span class="tech-mane"> [ React.js ] </span>
+            </li>
+
+            <li class="project-item">
+              <a class="project-link" href="/">
+                <svg class="link-icon" width="10" height="10">
+                <use href="./img/symbol-defs.svg#icon-link">
+                </use>
+              </svg>
+               Image finder 
+            </a>
+
+              <span class="dots"></span>
+              <span class="tech-mane"> [ React.js ] </span>
+            </li>
+
+            <li class="project-item">
+              <a class="project-link" href="https://md-movies.netlify.app/">
+                <svg class="link-icon" width="10" height="10">
+                  <use href="./img/symbol-defs.svg#icon-link">
+                  </use>
+                </svg>
+                 Search movies 
+              </a>
+
+              <span class="dots"></span>
+              <span class="tech-mane"> [ React.js ] </span>
+            </li>
+          </ul>
+
+          <p class="projects-title">Team projects</p>
+          <ul class="list">
+            <li class="project-item">
+              <a class="project-link" href="https://mdcreator.github.io/final_project/">
+                <svg class="link-icon" width="10" height="10">
+                  <use href="./img/symbol-defs.svg#icon-link">
+                  </use>
+                </svg>
+                 BarberShop
+                </a>
+
+              <span class="dots"></span>
+              <span class="tech-mane"> [ HTML5, CSS3 ] </span>
+            </li>
+
+            <li class="project-item">
+              <a class="project-link" href="https://luno-front-end.github.io/Filmoteka/">
+                <svg class="link-icon" width="10" height="10">
+                  <use href="./img/symbol-defs.svg#icon-link">
+                  </use>
+                </svg>
+                 Filmoteka 
+                </a>
+
+              <span class="dots"> </span>
+              <span class="tech-mane"> [ HTML5, CSS3 ] </span>
+            </li>
+          </ul>
 
         </div>
 
@@ -126,52 +291,44 @@
 
         <!-- company 1 -->
         <div>
-          <h4 class="profession-title">Front-End Developer <span class="profession-company">Freelance</span></h4>
-          <span class="profession-time">September 2019 - up to now <span class="profession-divider">|</span> Ukraine</span>
+          <h4 class="profession-title">Full-Stack Web Developer <span class="profession-company">Freelance</span></h4>
+          <span class="profession-time">April 2020 - up to now <span class="profession-divider">|</span> Ukraine</span>
           <ul class="profession-duties">
-            <li class="profession-duties-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-            <li class="profession-duties-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li class="profession-duties-item"> Risus commodo viverra maecenas.</li>
-            <li class="profession-duties-item"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod.</li>
+            <li class="profession-duties-item"> Creation of user interfaces for applications, web services and sites.</li>
+            <li class="profession-duties-item"> Make responsive websites.</li>
+            <li class="profession-duties-item"> Experience in creating websites and single page applications.</li>
+            <li class="profession-duties-item"> Develop mobile-friendly pixel-perfect, clean code applying W3C Standards with SEO friendly structure of the pages.</li>
           </ul>
         </div>
 
         <!-- company 2 -->
         <div>
-            <h4 class="profession-title">Manager<span class="profession-company"> Roga & Kopyta New</span></h4>
-            <span class="profession-time">March 2015 - October 2018 <span class="profession-divider">|</span> Ukraine</span>
+            <h4 class="profession-title">Manager<span class="profession-company"> Skano Furniture Ukraine </span></h4>
+            <span class="profession-time">May 2010 - Until now <span class="profession-divider">|</span> Ukraine</span>
             <ul class="profession-duties">
                 <li class="profession-duties-item">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Retail sales of luxury furniture.
                 </li class="profession-duties-item">
-                <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="profession-duties-item">Risus commodo viverra maecenas.</li>
-            </ul>
-        </div>
+                <li class="profession-duties-item">Development of an individual design for a client.</li>
+                <li class="profession-duties-item">Work in the program for the development of interior design "PRO100".</li>
+                <li class="profession-duties-item">Accompanying clients at all stages: consultation, adjustments to projects and configurations, answers to
+questions, departure for measurements, calculations, contract, terms, delivery, reception, warranty service, post-warranty service.</li>
 
-        <!-- company 3 -->
-        <div>
-            <h4 class="profession-title">Manager<span class="profession-company"> Roga & Kopyta LLC </span></h4>
-            <span class="profession-time">June 2014 - February 2015 <span class="profession-divider">|</span> Ukraine</span>
-            <ul class="profession-duties">
-                <li class="profession-duties-item">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </li>
-                <li class="profession-duties-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li class="profession-duties-item">Risus commodo viverra maecenas.</li>
             </ul>
         </div>
 
         <!-- education -->
         <div>
             <h3 class="about-me-title">Education</h3>
-            <span class="profession-education">Kharkiv National University of Radioelectronics</span>
-            <h4 class="profession-education-title">Management</h4>
-            <span class="profession-time">Septermber 2009 - June 2014 <span class="profession-divider">|</span> Ukraine</span>
+            <span class="profession-education">GOIT. Training school of specialists in IT</span>
+            <h4 class="profession-education-title">Full Stack Web Developer</h4>
+            <span class="profession-time">April 2020 - up to now <span class="profession-divider">|</span> Ukraine</span>
+        </div>
+        <div>
+            <!-- <h3 class="about-me-title">Education</h3> -->
+            <span class="profession-education">Dniprovsk State Technical University</span>
+            <h4 class="profession-education-title">The Department of Mechanical Engineering Technology</h4>
+            <span class="profession-time">Septermber 2010 - June 2014 <span class="profession-divider">|</span> Ukraine</span>
         </div>
       </div>
       </div>

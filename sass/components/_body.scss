@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: "Lato", sans-serif;
+  padding: 20px 10px;
+
+  // .container {
+  //   @extend %container;
+
+  //   @media screen and (min-width: $mobile) {
+  //     width: $mobile;
+  //   }
+  //   @media screen and (min-width: $tablet) {
+  //     width: $tablet;
+  //   }
+  //   @media screen and (min-width: $desktop) {
+  //     width: $desktop;
+  //   }
+  // }
+
+  a {
+    @extend %link;
+  }
+
+  .list {
+    @extend %list;
+  }
+
+  .img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.asidebar {
+  background-color: $primery-color;
+  padding: 20px 0;
+
+  @media screen and(min-width:$tablet) and (max-width: 1199px) {
+    display: flex;
+    background-color: $primery-color;
+    padding: 20px 5px;
+    // width: 370px;
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+    flex-wrap: wrap;
+    // padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.about-me-title {
+  // font-size: 22px;
+  font-size: calc(15px + (4 + 4 * 0.7) * ((100vw - 320px) / 1200));
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-me-title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 30%;
+  width: 40%;
+  height: 2px;
+  margin-left: -30%;
+  background: $primery-color;
+}
+
+.my-photo {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  // margin: 0 auto;
+
+  @media screen and(min-width: $tablet) {
+    width: 370px;
+    padding: 0 10px;
+  }
+}
+
+.short-info {
+  @media screen and (min-width: $tablet) {
+    padding-top: 10px;
+  }
+}
+
+.wrapper {
+  @media screen and(min-width: $desktop) {
+    display: flex;
+    background: $text-color;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: $box-shadow;
+  }
+}

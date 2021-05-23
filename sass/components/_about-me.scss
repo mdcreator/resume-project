@@ -1,0 +1,49 @@
+.about-me-conteiner {
+  padding: 25px 30px;
+  @media screen and (min-width: $desktop) {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+
+.info-conteiner {
+  margin-bottom: 25px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 45px;
+  }
+}
+
+.profession-desktop {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    margin-bottom: 23px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.my-name-desktop {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+}
+
+.description {
+  color: $primery-color;
+  font-size: 14px;
+  font-weight: 400;
+  @media screen and (min-width: $desktop) {
+    color: $primery-color;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

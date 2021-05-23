@@ -1,0 +1,41 @@
+.skills-info {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    padding-top: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 15px;
+  }
+}
+
+.skills-title {
+  // @include adaptiv-font(15, 22);
+  font-weight: 700;
+  line-height: 24px;
+  color: $text-color;
+  margin-bottom: 10px;
+  font-size: calc(15px + (4 + 4 * 0.7) * ((100vw - 320px) / 1200));
+}
+
+.tech-skills-conteiner {
+  margin: 25px 40px 0 40px;
+}
+
+.soft-skills-conteiner {
+  margin: 25px 40px 0 40px;
+  @media screen and (min-width: $tablet) {
+    margin: 25px 40px 0 40px;
+  }
+}
+
+.my-element {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-left: 15px;
+  color: $accent-color;
+}
+
+.my-element-text {
+  color: $text-color;
+}
