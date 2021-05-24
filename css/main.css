@@ -484,6 +484,10 @@ body .img {
   text-transform: lowercase;
 }
 
+.contacts.list {
+  margin-bottom: 25px;
+}
+
 .contacts-link {
   font-size: 14px;
   font-weight: 400;
@@ -504,15 +508,6 @@ body .img {
   vertical-align: middle;
   background-size: contain;
   fill: currentColor;
-}
-
-.contacts-location {
-  margin: 15px 0;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #fff;
 }
 
 .contacts-info {
